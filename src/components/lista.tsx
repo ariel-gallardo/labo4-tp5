@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Instrumento from '@componente/detalle';
+import Instrumento from '@componente/detallelista';
 import InstrumentosJSON from '@datos/instrumentos.json';
+import Historial from '@componente/historial';
+import { useLocation } from 'react-router-dom';
 
 interface IProps{
 
@@ -21,11 +23,12 @@ export default class Instrumentos extends Component<IProps,IDetalle>{
 
     render(){
         return <div>
-            <ul>
+            <ul className="list-group-flush">
                 { 
                     this.state.instrumentos.map( i =>{
                         let { id, marca, modelo, instrumento, imagen, precio, costoEnvio, cantidadVendida, descripcion } = i; 
                         return <Instrumento key={id}
+                            id = {id}
                             marca = {marca}
                             modelo = {modelo}
                             instrumento = {instrumento}
@@ -34,6 +37,7 @@ export default class Instrumentos extends Component<IProps,IDetalle>{
                             costoEnvio = {costoEnvio}
                             cantidadVendida = {cantidadVendida}
                             descripcion = {descripcion}
+                            history={Historial}
                         />
                     })
                 }
