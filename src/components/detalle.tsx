@@ -49,7 +49,7 @@ export default class Instrumento extends Component<any, Detalle>{
                     </div>
                 </div>
                 <div className="align-self-end w-50 justify-content-start position-absolute">
-                    <Link to="/" className="btn btn-outline-primary">Agregar al carrito</Link>
+                    <Link to="/instrumentos" className="btn btn-outline-primary">Agregar al carrito</Link>
                 </div>
             </div>
         </div>

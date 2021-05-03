@@ -56,3 +56,9 @@
 .descripcion{
     font-size: 0.9rem;
 }
+
+@import 'leaflet/dist/leaflet.css';
+
+.leaflet-container {  width: 80vw;  height: 80vh; }
+
+

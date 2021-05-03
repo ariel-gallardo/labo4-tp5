@@ -5,7 +5,7 @@ export default class Instrumento extends Component<Detalle>{
 
     redirigir(){
         return this.props.history.push({
-            pathname: `/instrumento/detalle`,
+            pathname: `/instrumentos/detalle`,
             state : {
                 instrumento : this.props.instrumento,
                 marca : this.props.marca,
