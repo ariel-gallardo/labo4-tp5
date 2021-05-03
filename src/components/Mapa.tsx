@@ -18,7 +18,7 @@ export default class Mapa extends Component {
 
     render(){
         return <div>
-        <h4 className="text-center my-3">Av. Las Heras y Av. San Martin, Ciudad de Mendoza</h4>
+        <h4 className="text-center my-3 donde">Av. Las Heras y Av. San Martin, Ciudad de Mendoza</h4>
         <MapContainer
         className="mt-3" center={[-32.88639,-68.83829]} zoom={19} scrollWheelZoom={false}>
             <TileLayer

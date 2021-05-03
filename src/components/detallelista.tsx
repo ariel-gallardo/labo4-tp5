@@ -24,7 +24,7 @@ export default class Instrumento extends Component<Detalle>{
     }
 
     render(){
-        return <li className="d-flex list-group-item">
+        return <li className="d-flex list-group-item bg-transparent detalle">
             <img className="img-responsive mr-3" src={require(`@img/${this.props.imagen}`).default} onClick={() => { this.redirigir()}} />
             <ul className="list-unstyled">
                 <li className="nombre">{this.props.instrumento}</li>

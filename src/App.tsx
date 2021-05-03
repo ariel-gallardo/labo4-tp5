@@ -12,7 +12,7 @@ function App() {
     <>
       <Router history={Historial}>
         <BarraNavegacion/>
-        <div className="container">
+        <div className="container Hendrix">
           <Switch>
             <Route exact path="/" component={Index} />
             <Route exact path="/mapa" component={Mapa} />
